@@ -13,9 +13,9 @@
 
 #include <tamtypes.h>
 
-#include <libuya/time.h>
-#include <libuya/string.h>
-#include <libuya/stdio.h>
+#include <time.h>
+#include <string.h>
+#include <stdio.h>
 #include "module.h"
 
 const int patches[][2] = {
