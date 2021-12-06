@@ -17,6 +17,7 @@
 #include <stdio.h>
 #include <uya.h>
 #include <math3d.h>
+#include <player.h>
 #include "module.h"
 
 /*
@@ -66,6 +67,10 @@ int main (void)
 {
 	// Call this first
 	uyaPreUpdate();
+
+	playerSetX12Camera();
+
+	// DPRINTF("Test!");
 
 	// Call this last
 	uyaPostUpdate();

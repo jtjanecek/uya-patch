@@ -332,4 +332,12 @@ __LIBUYA_GETTER__ int playerPadGetButtonDown(Player * player, u16 buttonMask);
  */
 __LIBUYA_GETTER__ int playerPadGetButtonUp(Player * player, u16 buttonMask);
 
+
+
+__LIBUYA_GETTER__ Player ** playerGetAll(void);
+
+__LIBUYA_SETTER__ void playerSetWeapon(Player * player, int weaponId);
+
+__LIBUYA_SETTER__ void playerSetX12Camera(void);
+
 #endif // _LIBUYA_PLAYER_H_

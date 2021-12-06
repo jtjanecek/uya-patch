@@ -16,7 +16,7 @@
  * Local player 2 dme player index.
  */
 #define PLAYER_2_ID                                 (*(u32*)0x001B6ED8)
-
+                                                            
 /*
  * Weapon stuff.
  */
@@ -24,11 +24,20 @@
 #define WEAPON_DATA_SIZE                            (0x12B0)
 #define WEAPON_EQUIPSLOT                            ((int*)0x0020C690)
 
+//#define X12_CAMERA_DISTANCE                         ((u32) 0x002F8B60)
+
 // 
 extern const PadHistory DefaultPadHistory;
 
 // Player pad history
 PadHistory PlayerPadHistory[GAME_MAX_PLAYERS];
+
+//--------------------------------------------------------------------------------
+void playerSetX12Camera(void) {
+    int * camera = 0x002F8B62;
+    *camera = 1;
+}
+
 
 //--------------------------------------------------------------------------------
 Player ** playerGetAll(void)
